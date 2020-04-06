@@ -7,12 +7,12 @@
     <title>Vatsalya Singhi</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="icon" href="./assets/fevicon.jpeg" type="image/x-icon">
-    <script src="https://use.fontawesome.com/329f05659a.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/> -->
 </head>
 
-<body id="body">
+<body id="body" onload="endload()">
 
-    <section class="banner" id="sec">
+    <section class="banner hide" id="sec">
         <header>
             <a href="#" class="logo"><span>&lt;/V</span><span>S</span>&gt; </a>
             <div id="toggle" onclick="toggle()"></div>
@@ -43,7 +43,7 @@
         </ul>
     </section>
 
-    <div id="navigation">
+    <div class="hide" id="navigation">
         <ul>
             <li><a onclick="navigateTo('sec')" href="#sec">Home</a></li>
             <li><a onclick="navigateTo('about')" href="#about">About</a></li>
@@ -53,7 +53,7 @@
         </ul>
     </div>
 
-    <section class="secondarypage" id="about">
+    <section class="secondarypage hide" id="about">
         <header class="secondHeader">
             <p class="secondheadp">About Me</p>
         </header>
@@ -63,25 +63,29 @@
             <!-- <p>I like building <span>awesome</span> software.</p> -->
             <h6>I like building <span>awesome</span> software.</h6>
             <p>
-                The main area of my expertise is backend development (server side of the web).
-                Well versed in design & development, deploying small and medium web/mobile apps and PWAs using JS
-                frameworks like Angular & Ionic, setting up CI/CD pipelines and writing clean, robust logics.
+                My area of my expertise is backend development - everything on the server side of the web. 
+                I'm well versed in the end-to-end design, development and deployment of PWAs and mobile applications. 
+                On a daily basis, I use JS frameworks like Angular & Ionic, set up CI/CD pipelines and 
+                most important of all write clean and robust code ❤️
             <br>
-                Interested in the entire backend spectrum and working on ambitious projects with positive people.
+                I'm interested in the entire backend spectrum and working on ambitious projects with positive people. 
+                Also, hit me up for anime recommendations or a healthy game of basketball ;)
             </p>
         </div>
     </section>
 
-    <section class="secondarypage" id="skills">
+    <section class="secondarypage hide" id="skills">
         <header class="secondHeader">
             <p class="secondheadp">Skills</p>
         </header>
 
         <div class="skills maincontent">
             <br>
-            <p>I've worked with a wide variety of programming languages. For web applications I use PHP and Javascript.
-                Whenever I need the most performance possible I obviously go with C++ and finally when I am building
-                prototypes or working on my hobby projects I fall back on Python</p>
+            <p>
+                I've worked with a variety of programming languages. For web applications I use PHP and Javascript. 
+                Whenever the focus is on performance I obviously go with C++ and finally when I am building prototypes 
+                or working on my hobby projects I have fun with Python
+            </p>
             <br>
 
             <h5>Most Frequently used tools</h5>
@@ -125,30 +129,7 @@
         </div>
     </section>
 
-    <section class="secondarypage" id="education">
-        <header class="secondHeader">
-            <p class="secondheadp">Education</p>
-        </header>
-
-        <div class="education maincontent">
-            <br>
-            <p>
-                I have obtained my Bachelor's degree in Information Technology from SRM University, Kattankulathur with a CGPA of 7.7.
-                The undergraduate curriculum, accredited the highest grade by the National Assessment and
-                Accreditation Council , introduced me to a wide variety of engineering subjects. Courses like
-                Artificial Intelligence, Software Engineering, Database Systems, Object Oriented Programming,
-                Data Structures, Design and Analysis of Algorithms, Computer Organization and Architecture,
-                Internet of Things and Human Computer Interaction to mention a few provided me with a strong
-                footing in the theoretical concepts and advancements in Information Technology. They have
-                assisted me in broadening my knowledge while showing me the diverse aspects of Information
-                Technology that I find fascinating. While offering both depth and breadth across the field, these
-                courses put into perspective the importance and relevance of Information Technology and the
-                application of its fundamentals to the problems faced in the real world scenarios.
-            </p>
-        </div>
-    </section>
-
-    <section class="secondarypage" id="works">
+    <section class="secondarypage hide" id="works">
         <header class="secondHeader">
             <p class="secondheadp">Work Experience</p>
         </header>
@@ -174,6 +155,68 @@
             </ul>
         </div>
     </section>
+
+    <section class="secondarypage hide" id="education">
+        <header class="secondHeader">
+            <p class="secondheadp">Education</p>
+        </header>
+
+        <div class="education maincontent">
+            <br>
+            <div>
+                <ul class="firstdegree">
+                    <li>
+                        <span class="main1"> <a href="https://www.srmist.edu.in/engineering/department-of-information-technology/about-the-department" target="_blank" class="nodecor"> Bachelor's Degree in Information Technology </a> </span> <br>
+                        <span class="main2"> SRM University, Kattankulathur</span> <br>
+                        <span class="main2"> 08/2014 - 08/2018 </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5>Research Paper Publications</h5>
+                <ul class="ml-10">
+                    <li> 
+                        <span> <a href="http://ijircce.com/upload/2018/june/64_Smart.pdf" target="_blank" class="nodecor"> Smart Surveillance System </a> </span> 
+                    </li>
+                    <li> 
+                        <span> <a href="http://ijaer.com/images/short_pdf/1508066858_Vatsalya_4.pdf" target="_blank" class="nodecor" > Smart Shopping System for Billing Automation </a> </span> 
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div>
+                <h5>Past Organisations </h5>
+                <ul class="ml-10">
+                    <li> 
+                        <span> <a href="http://www.think-digital.in/" target="_blank" class="nodecor organisationdate"> Think-Digital </a> </span>  <span class="workdate" >May'15 – Jun'18</span> 
+                    </li>
+                    <li> 
+                        <span> <a href="https://www.iotalliance.in/" target="_blank" class="nodecor organisationdate"> Internet of Things Alliance (IOTA) </a> </span> <span class="workdate" >May'16 – May'18</span> 
+                    </li>
+                </ul>
+            </div>            
+
+
+            <div>
+                <h5 class="language"> Languages </h5>
+                <ul class="ml-10">
+                    <li> <span> English </span> </li>
+                    <li> <span> Hindi </span> </li>
+                    <li> <span> Tamil </span> </li> 
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <!-- Loader -->
+
+    <div id="loaderparent" class="loaderparent">
+        <div id="loader" class="loader"></div>
+    </div>
 
     <script type="text/javascript">
         function toggle() {
@@ -201,6 +244,25 @@
             } catch (err) {
                 console.log('err=>', err);
             }
+        }
+
+        function endload() {
+            var loaderparent = document.getElementById('loaderparent');
+
+            setTimeout(()=>{
+                console.log('show now!');
+                var sec = document.getElementById('sec');
+                sec.classList.toggle('hide');
+                var nav = document.getElementById('navigation');
+                nav.classList.toggle('hide');
+                var sections = document.getElementsByClassName('secondarypage');
+                Array.from(sections).forEach((section)=>{
+                    section.classList.toggle('hide');
+                })
+
+                // hide loaderparent
+                loaderparent.classList.toggle('hide');
+            },500)
         }
     </script>
 </body>

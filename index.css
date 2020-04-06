@@ -5,8 +5,68 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+    /* overflow-x: hidden; */
+}
+
+.loaderparent {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    left: 40%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: linear-gradient(45deg,transparent,transparent,40%,#e5f403);   
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+.hide {
+    display: none!important;
 }
 
 .banner header {
@@ -90,7 +150,6 @@
 
 .banner.active {
     transform: translateX(-30%);
-    /* transform: translateX(-400px); */
 }
 
 .stop-scrolling {
@@ -334,7 +393,7 @@
 .aboutme h6 {
     margin-top: 10%;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     word-wrap: break-word;
 }
 
@@ -421,16 +480,6 @@
     width: 250px;
 } */
 
-/* education */
-.education p {
-    margin-top: 10%;
-    font-size: 1.2em;
-    color: #fff;
-    font-weight: 300;
-    line-height: 2em;
-    text-align: justify;
-}
-
 /* Work experience */
 
 .works ul {
@@ -462,29 +511,60 @@
     color: #40c3ff;
 }
 
+/* education */
+
+.education {
+    margin-left: 10%;
+}
+.education .firstdegree {
+    margin-top: 10%;
+    /* margin-left: 10%; */
+}
+
+
+.education li {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1em;
+    word-wrap: break-word;
+}
+
+.main2 {
+    font-size: 1em;
+}
+
+.nodecor {
+    text-decoration: none!important;
+    color: #fff;
+}
+
+.education h5 {
+    margin-top: 5%;
+    color: #40c3ff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .loader {
+        left: 40%;
+    }
+}
 
 @media (max-width:992px){
-    /* About Page */
-    /* #about {
-        padding: 100px 50px 150px;
+
+    .loader {
+        left: 40%;
     }
 
-    #about header {
-        padding: 20px 50px;
-        font-size: 1em;
+    .education div {
+        margin-top: 5%;
+        margin-bottom: 15%;
     }
-    .aboutme {
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: 1em;
-        text-align: left;
-    }
-    .aboutme h6 {
-        font-size: 1.2em;
-    }
-    .aboutme p {
-        font-size: 1em;
-    }    */
+
 }
 
 @media (max-width:768px){
@@ -529,23 +609,27 @@
         margin-right: 10px;
     }
 
-    /* .secondarypage {
-        padding: 80px 20px 100px;
+
+    .skills div {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .secondHeader {
-        padding: 20px 50px;
-        font-size: 1.8em;
+    .skillList:nth-child(2) {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    .secondheadp {
-        font-size: 1.8em;
-        margin-bottom: 1px;
-    } */
-    
+    .education div {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
 }
 
 @media (max-width:576px){
+
     /* Home Page */
     .banner {
         padding: 100px 50px 150px;
@@ -596,7 +680,8 @@
     }
 
     .aboutme h6 {
-        margin-top: 5%;
+        /* margin-top: 5%; */
+        margin-top: 8%;
         font-size: 1.2em;
     }
 
@@ -656,15 +741,34 @@
 
     /* education */
 
-    .education p {
-        margin-top: 15%;
-        font-size: 1em;
-        color: #fff;
-        font-weight: 300;
-        line-height: 2em;
-        text-align: start;
+    .education {
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
+    .education div {
+        margin-bottom: 15%;
+    }
+
+    .education ul {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .education li {
+        font-size: 1em;
+        margin-bottom: 5%;
+    }
+
+    .education li>span {
+        display: inline-block;
+        margin-bottom: 1%;
+    }
+
+    .organisationdate {
+        width: 200px;
+        margin-right: 20px;
+    }
     /* Work experience */
 
     .works ul {
@@ -677,6 +781,10 @@
         margin-bottom: 5%;
     }
 
+    .language {
+        margin-top: 50px;
+    }
+
     .workdate {
         width: 200px;
         margin-right: 20px;
@@ -685,5 +793,15 @@
     .works li>span {
         display: inline-block;
         margin-bottom: 1%;
+    }
+}
+
+@media (max-width: 300px) {
+
+    * { 
+        overflow-x: hidden;
+    }
+    .loader {
+        left: 20%;
     }
 }
