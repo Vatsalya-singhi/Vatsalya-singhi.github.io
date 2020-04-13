@@ -20,12 +20,13 @@
 
 .loader {
     position: absolute;
-    left: 40%;
+    left: 45%;
     width: 10em;
     height: 10em;
     border-radius: 50%;
     background: linear-gradient(45deg,transparent,transparent,40%,#e5f403);   
     animation: loading 2s linear infinite;
+    box-shadow: inset 5px 5px 22px #479bcc, inset -5px -5px 22px #63d7ff;
 }
 
 @keyframes loading {
@@ -549,7 +550,7 @@
 
 @media (min-width: 1200px) {
     .loader {
-        left: 40%;
+        left: 45%;
     }
 }
 
@@ -567,6 +568,11 @@
 }
 
 @media (max-width:768px){
+
+    .loader {
+        left: 40%;
+    }
+
     /* Home Page */
     .banner {
         padding: 100px 50px 150px;
@@ -628,6 +634,10 @@
 }
 
 @media (max-width:576px){
+
+    .loader {
+        left: 30%;
+    }
 
     /* Home Page */
     .banner {
