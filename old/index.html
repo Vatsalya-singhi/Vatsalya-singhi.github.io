@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatsalya Singhi</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="icon" href="./assets/fevicon.jpeg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/> -->
+</head>
+
+<body id="body" onload="endload()">
+
+    <section class="banner hide" id="sec">
+        <header>
+            <a href="#" class="logo"><span>&lt;/V</span><span>S</span>&gt; </a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Vatsalya Singhi</span> ;)</h2>
+            
+            <p>
+                Software Engineer.
+            </p>
+
+            <!-- <div class="wrapper">
+                <p class="wrapperWord">Coding is</p>
+                <div class="wordList">
+                    <span class="words">awesome</span>
+                    <span class="words">interesting</span>
+                    <span class="words">incredible</span>
+                    <span class="words">fantastic</span>
+                </div>
+            </div> -->
+
+            <a href="#about">
+                <span></span>
+                <span></span>
+                Know More
+                <span></span>
+                <span></span>
+
+            </a>
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/vatsalya.singhi" target="_blank" data-toggle="tooltip"
+                    title="Facebook">
+                    <img src="./assets/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/vatsalyasinghi/" target="_blank" data-toggle="tooltip"
+                    title="LinkedIn">
+                    <img src="./assets/linkedin.png" alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Vatsalya-singhi" target="_blank" data-toggle="tooltip" title="Github">
+                    <img src="./assets/github.png" alt="github">
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@vatsalya.singhi4316" target="_blank" data-toggle="tooltip" title="Medium">
+                    <img src="./assets/medium.png" alt="medium">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="hide" id="navigation">
+        <img src="./assets/dp.jpg" alt="Profile" class="dp">
+        <ul>
+            <li><a onclick="navigateTo('sec')" href="#sec">Home</a></li>
+            <li><a onclick="navigateTo('about')" href="#about">About</a></li>
+            <li><a onclick="navigateTo('skills')" href="#skills">Skills</a></li>
+            <li><a onclick="navigateTo('works')" href="#works">Past Works</a></li>
+            <li><a onclick="navigateTo('education')" href="#education">Education</a></li>
+        </ul>
+    </div>
+
+    <!-- About Me -->
+    <section class="secondarypage hide" id="about">
+        <header class="secondHeader">
+            <p class="secondheadp">About Me</p>
+        </header>
+
+        <div class="aboutme maincontent">
+            <br>
+            <!-- <p>I like building <span>awesome</span> software.</p> -->
+            <h6>I like building <span>awesome</span> software.</h6>
+            <p>
+                <br>
+                My area of expertise is Full Stack development with 2+ years experience participating in the complete
+                product development lifecycle of successfully launched applications.
+                I'm well versed in the end-to-end development & deployment of cross platform mobile applications and
+                eager to deliver mission critical technology and business solutions which touches millions.
+                On a daily basis, I use JS frameworks like Angular & Ionic to develop interactive dashboards which
+                provide clients descriptive analytics and most important of all write clean and robust code ❤️
+                <br> <br>
+                I'm interested in the entire spectrum and working on ambitious projects with positive people.
+                Also, hit me up for anime recommendations or a healthy game of basketball ;)
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="secondarypage hide" id="skills">
+        <header class="secondHeader">
+            <p class="secondheadp">Skills</p>
+        </header>
+
+        <div class="skills maincontent">
+            <br>
+            <p>
+                I've worked with a variety of programming languages. For web applications I use PHP and Javascript.
+                Whenever the focus is on performance I obviously go with C++ and finally when I am building prototypes
+                or working on my hobby projects I have fun with Python
+            </p>
+            <br>
+
+            <h5>Most Frequently used tools</h5>
+            <br>
+
+            <div class="skillbox">
+                <div class="skillList">
+                    <h4 class="skillType">Languages</h4>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Typescript</li>
+                        <li>Core Java</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+
+                <div class="skillList">
+                    <h4 class="skillType">Frameworks</h4>
+                    <ul>
+                        <li>Angular 13</li>
+                        <li>Ionic 5</li>
+                        <li>Express.js</li>
+                        <li>Selenium</li>
+                    </ul>
+                </div>
+
+                <div class="skillList">
+                    <h4 class="skillType">Software</h4>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Github & Gitlab</li>
+                        <li>Google Firebase</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="secondarypage hide" id="works">
+        <header class="secondHeader">
+            <p class="secondheadp">Work Experience</p>
+        </header>
+
+        <div class="works maincontent">
+            <br>
+            <ul>
+                <!-- <li>
+                    <span class="workdate">Oct'21 - <span class="present">Present</span></span> <span> Software
+                        Engineer @ <a href="https://www.cangonetworks.com/" target="_blank" class="workplace">CanGo
+                            Networks</a> </span>
+                </li> -->
+                <li>
+                    <span class="workdate">Sept'20 - Aug'21</span> <span> Software
+                        Engineer @ <a href="https://www.cangonetworks.com/" target="_blank" class="workplace">CanGo
+                            Networks</a> </span>
+                </li>
+                <li>
+                    <span class="workdate">Sept'18 - Apr'20 </span> <span> Software Engineer @ <a
+                            href="http://www.gethugames.in/" target="_blank" class="workplace">Gethu Games</a> </span>
+                </li>
+                <li>
+                    <span class="workdate">Mar'18 - Sept'18 </span> <span> Independent Software Developer </span>
+                </li>
+                <li>
+                    <span class="workdate">Mar'18 - May'18 </span> <span> Software Engineer Intern @ <a
+                            href="http://www.ripitsolutions.com/" target="_blank" class="workplace">RIP-IT Solutions</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="workdate">Dec'17 - Jan'18 </span> <span> Development Intern @ <a
+                            href="http://www.codbello.com/" target="_blank" class="workplace">Codbello Pvt Ltd</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="workdate">Jun'16 - Jul'16 </span> <span> IOT Trainee @ <a
+                            href="https://www.iotalliance.in/" target="_blank" class="workplace">IOTA, SRM
+                            University</a> </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="secondarypage hide" id="education">
+        <header class="secondHeader">
+            <p class="secondheadp">Education</p>
+        </header>
+
+        <div class="education maincontent">
+            <br>
+            <div>
+                <ul class="firstdegree">
+                    <li>
+                        <span class="main1"> <a
+                                href="https://www.srmist.edu.in/engineering/department-of-information-technology/about-the-department"
+                                target="_blank" class="nodecor"> Master's Degree in Applied Computer Science </a>
+                        </span> <br>
+                        <span class="main2"> FH Schmalkalden University of Applied Sciences, Germany </span> <br>
+                        <span class="main2"> 09/2021 - <span class="present">Present</span> </span>
+                    </li>
+                    <li>
+                        <span class="main1"> <a
+                                href="https://www.srmist.edu.in/engineering/department-of-information-technology/about-the-department"
+                                target="_blank" class="nodecor"> Bachelor's Degree in Information Technology </a>
+                        </span> <br>
+                        <span class="main2"> SRM University, Kattankulathur</span> <br>
+                        <span class="main2"> 08/2014 - 08/2018 </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Research Paper Publications</h5>
+                <ul class="ml-10">
+                    <li>
+                        <span> <a href="http://ijircce.com/upload/2018/june/64_Smart.pdf" target="_blank"
+                                class="nodecor"> Smart Surveillance System </a> </span>
+                    </li>
+                    <li>
+                        <span> <a href="http://ijaer.com/images/short_pdf/1508066858_Vatsalya_4.pdf" target="_blank"
+                                class="nodecor"> Smart Shopping System for Billing Automation </a> </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Open Source Contributions and Blogs</h5>
+                <ul class="ml-10">
+                    <li>
+                        <span>
+                            <a href="https://medium.com/@vatsalya.singhi4316/webrtc-application-with-virtual-board-integration-using-ionic-fc7f2855d66f"
+                                target="_blank" class="nodecor">
+                                WebRTC Application with Virtual Board integration using Ionic 5 </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="https://medium.com/@vatsalya.singhi4316/ethereum-payment-app-using-ionic-4b78cab9c908"
+                                target="_blank" class="nodecor">
+                                Ethereum Payment App using Ionic 5
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Past Organisations </h5>
+                <ul class="ml-10">
+                    <li>
+                        <span> <a href="http://www.think-digital.in/" target="_blank" class="nodecor organisationdate">
+                                Think-Digital </a> </span> <span class="workdate">May'15 – Jun'18</span>
+                    </li>
+                    <li>
+                        <span> <a href="https://www.iotalliance.in/" target="_blank" class="nodecor organisationdate">
+                                Internet of Things Alliance (IOTA) </a> </span> <span class="workdate">May'16 –
+                            May'18</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h5 class="language"> Languages </h5>
+                <ul class="ml-10">
+                    <li> <span> English </span> </li>
+                    <li> <span> Hindi </span> </li>
+                    <!-- <li> <span> Tamil </span> </li> -->
+                    <!-- <li> <span> German </span> </li> -->
+                    </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Loader -->
+
+    <div id="loaderparent" class="loaderparent">
+        <div id="loader" class="loader"></div>
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            console.log('toggle clicked!');
+            try {
+                var sec = document.getElementById('sec');
+                var body = document.getElementById('body');
+                var navigation = document.getElementById('navigation');
+                sec.classList.toggle('active');
+                navigation.classList.toggle('active');
+                body.classList.toggle('stop-scrolling');
+            } catch (err) {
+                console.log('err=>', err);
+            }
+        }
+        
+        function navigateTo(url) {
+            try {
+                var sec = document.getElementById('sec');
+                sec.classList.toggle('active');
+                var body = document.getElementById('body');
+                body.classList.toggle('stop-scrolling');
+                var navigation = document.getElementById('navigation');
+                navigation.classList.toggle('active');
+                document.getElementById(url).scrollIntoView();
+            } catch (err) {
+                console.log('err=>', err);
+            }
+        }
+
+        function endload() {
+            var loaderparent = document.getElementById('loaderparent');
+
+            setTimeout(() => {
+                console.log('show now!');
+                var sec = document.getElementById('sec');
+                sec.classList.toggle('hide');
+                var nav = document.getElementById('navigation');
+                nav.classList.toggle('hide');
+                var sections = document.getElementsByClassName('secondarypage');
+                Array.from(sections).forEach((section) => {
+                    section.classList.toggle('hide');
+                })
+
+                // hide loaderparent
+                loaderparent.classList.toggle('hide');
+            }, 2000)
+        }
+    </script>
+
+</body>
+
+</html>
